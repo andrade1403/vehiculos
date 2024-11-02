@@ -7,7 +7,7 @@ import { VehiclesModule } from "./vehicles/vehicles.module";
 
 @NgModule({
   declarations: [	
-    AppComponent
+    AppComponent,
    ],
   imports: [
     BrowserModule,

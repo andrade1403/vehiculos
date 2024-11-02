@@ -24,5 +24,4 @@ export class VehiclesListComponent implements OnInit {
   ngOnInit() {
     this.getVehicles();
   }
-
 }

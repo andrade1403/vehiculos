@@ -16,6 +16,35 @@
     />
   </head>
   <body>
+    <div class = 'container'>
+      <h1>TuSegundazo.com</h1>
+      <img 
+        src = "image.png"
+      />
+      <div class = 'row'>
+        <div class = 'col-8'>
+          <table class = 'table' id = 'vehiculos'>
+            <thead class = 'thead-dark'>
+              <tr>
+                <th>#</th>
+                <th>Marca</th>
+                <th>Línea</th>
+                <th>Modelo</th>
+              </tr>
+            </thead>
+            <tr *ngFor="let v of vehicles">
+              <td>{{v.id}}</td>
+              <td>{{v.marca}}</td>
+              <td>{{v.linea}}</td>
+              <td>{{v.modelo}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class = 'row'>
+        <div class = 'col-12' align = 'center' id = 'footer'>Contact us: +573102105253 - info&#64;tusegundazo.com - &#64;tusegundazo</div>
+      </div>
+    </div>
     <!-- Bootstrap JS and dependencies -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
