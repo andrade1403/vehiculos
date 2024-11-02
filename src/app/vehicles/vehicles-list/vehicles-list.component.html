@@ -19,7 +19,7 @@
     <div class = 'container'>
       <h1>TuSegundazo.com</h1>
       <img 
-        src = "image.png"
+        src = 'image.png'
       />
       <div class = 'row'>
         <div class = 'col-8'>
@@ -39,6 +39,11 @@
               <td>{{v.modelo}}</td>
             </tr>
           </table>
+        </div>
+      </div>
+      <div class = 'row'>
+        <div class = 'col-12' align = 'left' *ngFor="let marca of marcas">
+          <p>Total {{marca}}: {{dict[marca]}}</p>
         </div>
       </div>
       <div class = 'row'>
